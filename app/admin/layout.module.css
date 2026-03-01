@@ -1,0 +1,10 @@
+.wrap {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    overflow: auto;
+    background: var(--color-bg);
+}

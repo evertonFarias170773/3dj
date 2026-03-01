@@ -1,0 +1,145 @@
+.page {
+    padding: var(--space-8);
+    max-width: 1100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-6);
+}
+
+.title {
+    font-size: var(--font-2xl);
+    font-weight: 800;
+}
+
+.sub {
+    color: var(--color-text-secondary);
+    font-size: var(--font-sm);
+    margin-top: var(--space-1);
+}
+
+.buscaWrap {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: var(--space-6);
+}
+
+.buscaIcon {
+    position: absolute;
+    left: var(--space-3);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-disabled);
+}
+
+.buscaWrap .input {
+    padding-left: 2.5rem;
+}
+
+.tableWrap {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+}
+
+.row {
+    border-bottom: 1px solid var(--color-border);
+    transition: background 150ms;
+}
+
+.row:hover {
+    background: var(--color-surface-alt);
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.td {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-sm);
+    color: var(--color-text-secondary);
+    vertical-align: middle;
+}
+
+.prodInfo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+}
+
+.thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    background: var(--color-surface-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    font-size: 1.2rem;
+}
+
+.prodNome {
+    font-weight: 600;
+    font-size: var(--font-sm);
+    color: var(--color-text-primary);
+}
+
+.prodSlug {
+    font-size: var(--font-xs);
+    color: var(--color-text-disabled);
+}
+
+.coresMini {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.statusBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.statusBtns .badge {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: opacity 150ms;
+}
+
+.statusBtns .badge:hover {
+    opacity: 0.75;
+}
+
+.empty {
+    text-align: center;
+    padding: var(--space-12);
+    color: var(--color-text-secondary);
+}

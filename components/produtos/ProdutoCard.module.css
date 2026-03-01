@@ -1,0 +1,119 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 200ms ease;
+    height: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageWrap {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background: #F3F4F6;
+    overflow: hidden;
+    margin: 16px;
+    border-radius: 4px;
+}
+
+.image {
+    object-fit: contain;
+    padding: 16px;
+    transition: transform 300ms ease;
+}
+
+.cardLink:hover .image {
+    transform: scale(1.05);
+}
+
+.noImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--color-text-disabled);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 16px 16px;
+    flex: 1;
+}
+
+.nome {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: auto;
+}
+
+.precoOriginal {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.precoVistaContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: #F3F4F6;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.iconePix {
+    color: #00B17A;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.precoInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.precoVista {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.notaDesconto {
+    font-size: 0.7rem;
+    color: #6B7280;
+}
+
+.actionContainer {
+    padding: 0 16px 16px 16px;
+}
