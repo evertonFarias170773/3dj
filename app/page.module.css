@@ -15,9 +15,10 @@
 }
 
 .sectionTitle {
-  font-size: var(--font-2xl);
-  font-weight: 800;
-  color: var(--color-text-primary);
+  font-family: 'Fredoka', cursive;
+  font-size: var(--font-3xl);
+  font-weight: 600;
+  color: var(--color-primary);
   text-align: center;
 }
 

@@ -79,6 +79,19 @@ export default function Header() {
                 <Link href="/?categoria=utilidades" className={styles.navLink}>Utilidades</Link>
             </nav>
 
+            {/* Sub-barra de Tags Discretas */}
+            <div className={styles.tagsBar}>
+                <span className={styles.tagsLabel}>Tags Populares:</span>
+                <div className={styles.tagsList}>
+                    <Link href="/?tag=pla" className={styles.tagItem}>PLA</Link>
+                    <Link href="/?tag=petg" className={styles.tagItem}>PETG</Link>
+                    <Link href="/?tag=decoracao" className={styles.tagItem}>Decoração</Link>
+                    <Link href="/?tag=presente" className={styles.tagItem}>Presentes</Link>
+                    <Link href="/?tag=escritorio" className={styles.tagItem}>Escritório</Link>
+                    <Link href="/?tag=utilidade" className={styles.tagItem}>Utilidade</Link>
+                </div>
+            </div>
+
             {/* Mobile Menu Dropdown */}
             {menuOpen && (
                 <div style={{ padding: '16px', borderTop: '1px solid #E5E7EB', background: '#fff' }}>

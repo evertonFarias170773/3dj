@@ -11,15 +11,15 @@ export default function Footer() {
             <div className={`container ${styles.inner}`}>
                 <div className={styles.brand}>
                     <div className={styles.logo}>
-                        <Image src="/logo.png" alt="J3D Store" width={120} height={38} style={{ objectFit: 'contain' }} />
+                        <Image src="/logo.png" alt="J3D Store" width={240} height={76} style={{ objectFit: 'contain' }} />
                     </div>
                     <p className={styles.tagline}>
                         Objetos únicos, impressos com precisão.<br />Design que você pode tocar.
                     </p>
                     <div className={styles.socials}>
-                        <a href="#" aria-label="Instagram" className={styles.social}><Instagram size={18} /></a>
-                        <a href="#" aria-label="WhatsApp" className={styles.social}><MessageCircle size={18} /></a>
-                        <a href="#" aria-label="Email" className={styles.social}><Mail size={18} /></a>
+                        <a href="https://instagram.com/j3d.impressao" aria-label="Instagram" className={styles.social} target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
+                        <a href="https://wa.me/5551985018848" aria-label="WhatsApp" className={styles.social} target="_blank" rel="noopener noreferrer"><MessageCircle size={18} /></a>
+                        <a href="mailto:contato@j3dstore.com.br" aria-label="Email" className={styles.social}><Mail size={18} /></a>
                     </div>
                 </div>
 
