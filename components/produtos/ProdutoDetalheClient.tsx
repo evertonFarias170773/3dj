@@ -48,6 +48,9 @@ export default function ProdutoDetalheClient({ produto }: Props) {
                 body: JSON.stringify({
                     cep_destino: cep.replace(/\D/g, ''),
                     peso_total_gramas: (produto.peso_gramas ?? 100) * quantidade,
+                    comprimento_mm: produto.comprimento_mm,
+                    largura_mm: produto.largura_mm,
+                    altura_mm: produto.altura_mm,
                     produto_id: produto.id,
                     quantidade,
                 }),

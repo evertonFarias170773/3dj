@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
-import { LayoutDashboard, Package, LogOut, Printer, ExternalLink } from 'lucide-react'
+import { LayoutDashboard, Package, LogOut, ExternalLink, Tags, ListTree } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import styles from './AdminSidebar.module.css'
 
@@ -15,6 +16,8 @@ export default function AdminSidebar({ userEmail }: Props) {
     const links = [
         { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
         { href: '/admin/produtos', label: 'Produtos', icon: Package },
+        { href: '/admin/categorias', label: 'Categorias', icon: ListTree },
+        { href: '/admin/tags', label: 'Tags', icon: Tags },
     ]
 
     async function logout() {
@@ -27,11 +30,7 @@ export default function AdminSidebar({ userEmail }: Props) {
     return (
         <aside className={styles.sidebar}>
             <div className={styles.logo}>
-                <Printer size={22} strokeWidth={2} />
-                <div>
-                    <div className={styles.logoTitle}>3D Print</div>
-                    <div className={styles.logoSub}>Painel Admin</div>
-                </div>
+                <Image src="/logo.png" alt="J3D" width={120} height={50} style={{ objectFit: 'contain' }} />
             </div>
 
             <nav className={styles.nav}>
